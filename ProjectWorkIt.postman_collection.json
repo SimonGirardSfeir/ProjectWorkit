@@ -1,0 +1,56 @@
+{
+  "info": {
+    "_postman_id": "2a5cf7a5-0a7c-47dd-bb62-8007e00b2798",
+    "name": "ProjectWorkIt",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Filter word out a file",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": "/choseanytxtfile.txt"
+            },
+            {
+              "key": "word-out",
+              "value": "Chose any word",
+              "type": "text"
+            },
+            {
+              "key": "birthDay",
+              "value": "2020-01-01",
+              "type": "text",
+              "disabled": true
+            },
+            {
+              "key": "",
+              "value": "",
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/upload",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
